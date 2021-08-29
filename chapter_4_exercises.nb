@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3620,        126]
+NotebookOptionsPosition[      2082,         79]
+NotebookOutlinePosition[      3070,        115]
+CellTagsIndexPosition[      3027,        112]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "My ",
+ StyleBox["First",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ " Notebook"
+}], "Title",
+ CellChangeTimes->{{3.838541385839705*^9, 
+  3.8385413880496264`*^9}},ExpressionUUID->"c8da8831-36b4-4fb2-a1ae-\
+b0fd43ba314d"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Initial Calculations
+\
+\>", "Section",
+ CellChangeTimes->{{3.83854145454499*^9, 
+  3.838541458341721*^9}},ExpressionUUID->"6102df41-75ee-4d7e-bd2b-\
+5fb6c3829b8b"],
+
+Cell[CellGroupData[{
+
+Cell["Solving an equation", "Subsection",
+ CellChangeTimes->{{3.838541481727468*^9, 
+  3.8385414864059887`*^9}},ExpressionUUID->"78142be0-68f1-436e-90b7-\
+fc0398d98c8b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"12", "*", "x"}], " ", "+", " ", "24"}], " ", "==", " ", "0"}], 
+   ",", " ", "x"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",ExpressionUUID->"e71f6cbb-99f9-4ae0-82d1-d15f514edaa9"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"x", "\[Rule]", 
+    RowBox[{"-", "2"}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.838541518696987*^9, 3.838541530589761*^9}, 
+   3.838541563670842*^9, 3.838541611920483*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"8ece914b-df44-4bec-bca4-b1b9388262d0"]
+}, Open  ]],
+
+Cell["In the example above, x is -2.", "Text",
+ CellChangeTimes->{{3.838541580187316*^9, 3.838541594887857*^9}, 
+   3.838541627422336*^9},ExpressionUUID->"20eb1f39-742d-4e94-b1e6-\
+463cdddb199c"]
+}, Open  ]]
+}, Open  ]]
+}, Closed]]
+},
+WindowSize->{808, 953},
+WindowMargins->{{284, Automatic}, {Automatic, 354}},
+TaggingRules->Association["TryRealOnly" -> False],
+FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (July 9, 2021)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["Title"]], 
+   Cell[
+    StyleData["Subtitle"]], 
+   Cell[
+    StyleData["Section"]], 
+   Cell[
+    StyleData["Subsection"]], 
+   Cell[
+    StyleData["Text"]], 
+   Cell[
+    StyleData["Item"]], 
+   Cell[
+    StyleData["Subitem"]]}, WindowSize -> {808, 911}, 
+  WindowMargins -> {{780, Automatic}, {Automatic, 183}}, Visible -> False, 
+  FrontEndVersion -> "12.3 for Mac OS X x86 (64-bit) (July 9, 2021)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+ExpressionUUID->"04dcdab4-90c1-4fb9-993c-b36f1bea5724"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 251, 9, 123, "Title",ExpressionUUID->"c8da8831-36b4-4fb2-a1ae-b0fd43ba314d"],
+Cell[CellGroupData[{
+Cell[856, 35, 173, 6, 132, "Section",ExpressionUUID->"6102df41-75ee-4d7e-bd2b-5fb6c3829b8b"],
+Cell[CellGroupData[{
+Cell[1054, 45, 169, 3, 67, "Subsection",ExpressionUUID->"78142be0-68f1-436e-90b7-fc0398d98c8b"],
+Cell[CellGroupData[{
+Cell[1248, 52, 266, 7, 37, "Input",ExpressionUUID->"e71f6cbb-99f9-4ae0-82d1-d15f514edaa9"],
+Cell[1517, 61, 315, 7, 42, "Output",ExpressionUUID->"8ece914b-df44-4bec-bca4-b1b9388262d0"]
+}, Open  ]],
+Cell[1847, 71, 195, 3, 44, "Text",ExpressionUUID->"20eb1f39-742d-4e94-b1e6-463cdddb199c"]
+}, Open  ]]
+}, Open  ]]
+}, Closed]]
+}
+]
+*)
+
