@@ -1,0 +1,409 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15372,        401]
+NotebookOptionsPosition[     13249,        360]
+NotebookOutlinePosition[     13649,        376]
+CellTagsIndexPosition[     13606,        373]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ST202 In-Chapter Exercises Part 1", "Chapter",
+ CellChangeTimes->{{3.7274659965925317`*^9, 3.727466003920027*^9}, {
+  3.727466056648489*^9, 3.7274660585926266`*^9}, {3.7274663652911887`*^9, 
+  3.727466365715305*^9}, {3.727707203871344*^9, 3.727707215037463*^9}, {
+  3.8123657296185856`*^9, 
+  3.812365741435884*^9}},ExpressionUUID->"a2dca719-f5ef-48ab-8944-\
+fd52fb157926"],
+
+Cell[CellGroupData[{
+
+Cell["1. Derived Distributions ", "Subsection",
+ CellChangeTimes->{
+  3.812365730951071*^9, {3.8123657634027777`*^9, 3.812365763497694*^9}, 
+   3.81236582789739*^9},ExpressionUUID->"0d900d9e-f540-46c5-8b73-\
+f5c1041ee279"],
+
+Cell[TextData[{
+ "An insurance company\[CloseCurlyQuote]s monthly claims are modeled by a \
+continuous, positive random variable ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]], "InlineMath",ExpressionUUID->
+  "372e4080-7382-476d-89f4-9d6f70cb39c2"],
+ ", whose probability density function is equal to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "/", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "+", "1"}], ")"}], "3"]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"2ceba920-2cc8-4c4c-b05e-ff1357a91af6"],
+ " where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "<", "x", "<", "\[Infinity]"}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"af54ffc5-e90a-4322-93e3-df386148104a"],
+ ". Determine the company\[CloseCurlyQuote]s expected monthly claims:\na) 1/3\
+\nb) 2/3\nc) 1/2\nd) 1/4"
+}], "Text",
+ CellChangeTimes->{
+  3.727466029876646*^9, {3.72770722306955*^9, 3.7277072527338467`*^9}, 
+   3.727710912012519*^9},ExpressionUUID->"f66974bd-248f-4238-b357-\
+5ea5c85b0f4c"],
+
+Cell[BoxData[
+ ButtonBox["Hint",
+  BaseStyle->{
+   FontFamily -> "Helvetica", FontSize -> 12, 
+    ButtonBoxOptions -> {
+     Background -> RGBColor[0.35, 0.63, 0.98], ButtonMargins -> 4}},
+  ButtonFunction:>CreateDocument[
+    Cell[
+     TextData[{
+      "For creating a distribution of known probability distribution, use the \
+", 
+       Cell[
+        BoxData[
+         ButtonBox[
+          StyleBox["ProbabilityDistribution", "Text", FontWeight -> Bold], 
+          BaseStyle -> "Link", ButtonData -> 
+          "paclet://ref/ProbabilityDistribution"]]], " function."}], "Text", 
+     CellChangeTimes -> {3.728072117767869*^9}], WindowTitle -> "Hint", 
+    WindowSize -> {800, 600}],
+  Evaluator->Automatic,
+  FrameMargins->4,
+  Method->"Preemptive"]], "Text",
+ TextAlignment->Right,ExpressionUUID->"b6f64789-935a-4e59-ba91-88b70a3b4180"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2. Fitting Data to Known Distributions", "Subsection",
+ CellChangeTimes->{{3.7274660808154325`*^9, 3.7274660821680117`*^9}, {
+   3.727466350443914*^9, 3.727466355172434*^9}, {3.727708065641962*^9, 
+   3.727708070000411*^9}, {3.812365760652973*^9, 3.8123657609862733`*^9}, 
+   3.812365819418559*^9},ExpressionUUID->"40419d95-624f-48ef-91ad-\
+ae1532a1b251"],
+
+Cell["\<\
+Four six-sided dice are rolled. Find the difference in expectation of the \
+maximum value and minimum value.
+a) 0
+b) 1.5
+c) 2.5
+d) 3.5\
+\>", "Text",
+ CellChangeTimes->{3.727466097614854*^9, 
+  3.727711369794999*^9},ExpressionUUID->"b0d721e6-5e65-437a-9827-\
+8170c369da93"],
+
+Cell[BoxData[
+ ButtonBox["Hint",
+  BaseStyle->{
+   FontFamily -> "Helvetica", FontSize -> 12, 
+    ButtonBoxOptions -> {
+     Background -> RGBColor[0.35, 0.63, 0.98], ButtonMargins -> 4}},
+  ButtonFunction:>CreateDocument[
+    Cell["Use DiscreteUniformDistribution to simulate the six-sided dice \
+roll. ", "Text", 
+     CellChangeTimes -> {{3.727466118959341*^9, 3.7274661766229544`*^9}}], 
+    WindowTitle -> "Hint", WindowSize -> {800, 600}],
+  Evaluator->Automatic,
+  FrameMargins->4,
+  Method->"Preemptive"]], "Text",
+ TextAlignment->Right,ExpressionUUID->"83ffa38b-20db-425b-8861-c4492d392cc8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["3. Method of Moments Estimation", "Subsection",
+ CellChangeTimes->{{3.7274662158617573`*^9, 3.727466218733356*^9}, {
+  3.727466335323903*^9, 3.727466338899455*^9}, {3.7277093909490547`*^9, 
+  3.7277093946916933`*^9}, {3.72771064940936*^9, 3.727710649849259*^9}, {
+  3.8123657977687793`*^9, 
+  3.8123658090881424`*^9}},ExpressionUUID->"33a09cfd-d4a1-4af5-b831-\
+201f544c1658"],
+
+Cell[TextData[{
+ "The length of words in the English language can be modeled using ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["BinomialDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/BinomialDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "180283b9-10fe-4f9d-9557-40c0c398be29"],
+ ". The parameters obtained after fitting the English words in ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["DictionaryLookup",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/DictionaryLookup"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "f40742b3-c51d-441f-8cbc-77ad9c29a3bd"],
+ " using ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["EstimatedDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/EstimatedDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "b2c96734-202e-48fd-b441-8dccba6dd02b"],
+ " are:"
+}], "Text",
+ CellChangeTimes->{
+  3.7274662260467405`*^9, 3.7277068294910517`*^9, {3.7277093973797493`*^9, 
+   3.727709429730352*^9}, {3.728221914207594*^9, 
+   3.7282219224694624`*^9}},ExpressionUUID->"b904cdb1-9906-4200-b9c1-\
+f7cc95562f64"],
+
+Cell["\<\
+a) {38, 0.32}
+b) {38, 0.22}
+c) {28, 0.32}
+d) {28, 0.22}\
+\>", "Text",
+ CellChangeTimes->{
+  3.7274662260467405`*^9, 3.7277068294910517`*^9, {3.7277093973797493`*^9, 
+   3.72770942100418*^9}},ExpressionUUID->"b9e18837-3b6d-499c-aa89-\
+5ad1017bc958"],
+
+Cell[BoxData[
+ ButtonBox["Hint",
+  BaseStyle->{
+   FontFamily -> "Helvetica", FontSize -> 12, 
+    ButtonBoxOptions -> {
+     Background -> RGBColor[0.35, 0.63, 0.98], ButtonMargins -> 4}},
+  ButtonFunction:>CreateDocument[
+    Cell["DictionaryLookup should provide the data of all words. ", "Text", 
+     CellChangeTimes -> {{3.727466234228467*^9, 3.7274662508293247`*^9}}], 
+    WindowTitle -> "Hint", WindowSize -> {800, 600}],
+  Evaluator->Automatic,
+  FrameMargins->4,
+  Method->"Preemptive"]], "Text",
+ TextAlignment->Right,ExpressionUUID->"5bfdecea-dcd3-4c0c-8d49-c00c8dcac487"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Review Exercises", "Section",ExpressionUUID->"c0b1a835-9404-46bc-acb0-64e062edb999"],
+
+Cell["\<\
+1. Fitting to a known distribution: This is a historically important dataset, \
+as it introduces the use of distributions into analysis. From 1875 through \
+1894, the Russian mathematician Ladislaus J. Bortkiewicz collected data from \
+10 Prussian army corps, recording how many occurrences of getting kicked by a \
+horse led to the injured person\[CloseCurlyQuote]s death. The data is given \
+as frequency data. The first element of each ordered pair gives the number of \
+deaths, and the second gives the frequency of observing that value.\
+\>", "Text",
+ CellChangeTimes->{{3.702212094119255*^9, 3.702212104175661*^9}, {
+   3.7022145431443596`*^9, 3.7022147144126825`*^9}, 3.702214789075701*^9, {
+   3.702215064941131*^9, 3.7022150838676424`*^9}, {3.7022151642407684`*^9, 
+   3.7022151999511404`*^9}, {3.7022152803553905`*^9, 
+   3.7022153178014956`*^9}, {3.702215433430646*^9, 3.702215433870805*^9}, {
+   3.7033526114600067`*^9, 3.7033526621691437`*^9}, {3.710250164020438*^9, 
+   3.710250169278494*^9}, {3.7102502198505497`*^9, 3.710250250512093*^9}, {
+   3.710250308727511*^9, 3.710250356880096*^9}, {3.7111021330845385`*^9, 
+   3.7111021738259134`*^9}, {3.711102290589954*^9, 3.7111023007449155`*^9}, {
+   3.714923878151335*^9, 3.71492388485111*^9}, {3.7149239156936283`*^9, 
+   3.714923969300078*^9}, 3.714924077425742*^9, {3.71499594411593*^9, 
+   3.7149959568973227`*^9}, {3.716902886050598*^9, 3.7169029184192123`*^9}, {
+   3.717096238651052*^9, 3.717096241354025*^9}, {3.717096293343891*^9, 
+   3.7170962937969913`*^9}, 3.72746632403603*^9, {3.727709493040861*^9, 
+   3.727709529519574*^9}},ExpressionUUID->"142f2509-e2eb-4e2c-831d-\
+5d3321b6e41d"],
+
+Cell["\<\
+a) The data to be used for this exercise is as follows:
+0   109
+1   65
+2   22
+3   3
+4   1\
+\>", "Text",
+ CellChangeTimes->{{3.717096308145891*^9, 
+  3.7170963149111357`*^9}},ExpressionUUID->"7da1413c-e4a5-4651-968b-\
+25dd48ba0bb0"],
+
+Cell["Store this in a variable in proper Wolfram Language format.", "Text",
+ CellChangeTimes->{
+  3.717096325616636*^9, {3.717177416538145*^9, 3.7171774302688947`*^9}, 
+   3.727709662551199*^9, 
+   3.7277117336464443`*^9},ExpressionUUID->"04603d6a-e3be-47d5-a072-\
+9f1d621e7f8d"],
+
+Cell[TextData[{
+ "b) Convert the tallied data into frequency data by using ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["ConstantArray",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/ConstantArray"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "bbf89dd3-df75-4900-9a31-81fee367525e"],
+ ".\nc) Fit the data to ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["PoissonDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/PoissonDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "ca7c21db-e195-4bae-bff2-a230eb039622"],
+ ".\nd) Generate the test table.\ne) Finally, for visualization of the \
+problem, plot the ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["PDF",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/format/PDF"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "1e318452-ff53-4878-bf18-b5146be60204"],
+ " of the fitted distribution to the ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["PDF",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/format/PDF"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "1f5e71e5-94d8-4e40-8f9f-629e7cdc70da"],
+ " of the actual data."
+}], "Text",
+ CellChangeTimes->{
+  3.717096325616636*^9, {3.717177416538145*^9, 3.7171774302688947`*^9}, {
+   3.727709664698941*^9, 3.727709696233729*^9}, {3.728069010027096*^9, 
+   3.7280690265787573`*^9}},ExpressionUUID->"d8926ea1-6e84-4283-b558-\
+ba14efc7352c"],
+
+Cell[TextData[{
+ "2. ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["LogisticDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/LogisticDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "6a514ea8-8ee6-410a-8c62-5cf30d9db4c8"],
+ " provides a very good fit for fractional price changes from the previous \
+closing price of stocks. In this example, first the daily fractional price \
+changes of the S&P 500 Index from January 1, 2007 to January 1, 2017 are \
+obtained, then the data is fitted using ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["EstimatedDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/EstimatedDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "f57763a2-179b-43e0-a6e0-af87b613197b"],
+ ", as well as to a nonparametric distribution. Finally, these distributions \
+are used to run a simulation."
+}], "Text",
+ CellChangeTimes->{{3.710249157747406*^9, 3.710249169229251*^9}, {
+   3.7102500514331503`*^9, 3.710250077321724*^9}, {3.710250376085885*^9, 
+   3.710250438266651*^9}, {3.710256984481703*^9, 3.710257101280756*^9}, {
+   3.71492398493128*^9, 3.714924054064941*^9}, {3.714924128358528*^9, 
+   3.714924132945325*^9}, {3.714924177975251*^9, 3.714924181293729*^9}, {
+   3.7149244559727917`*^9, 3.714924533536858*^9}, {3.7149256350214767`*^9, 
+   3.714925661714579*^9}, {3.7170963378158927`*^9, 3.7170963434562006`*^9}, {
+   3.7171774484193773`*^9, 3.717177451114084*^9}, {3.719058384626401*^9, 
+   3.7190583880321608`*^9}, {3.7280690301602373`*^9, 3.7280690365540867`*^9}, 
+   3.72814124602564*^9},ExpressionUUID->"98fe056e-72cc-49f8-8730-\
+6be937811f6a"],
+
+Cell[TextData[{
+ "a) Obtain the daily fractional changes in the S&P 500 using ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["FinancialData",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/FinancialData"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "754a2742-f8a3-46da-b790-863ba73c119e"],
+ ".\nb) Fit the data to ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["LogisticDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/LogisticDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "bd27394c-14dc-473a-af25-376e4af0cbac"],
+ ". Obtain goodness of fit and the test table.\nc) Fit the data to a \
+nonparametric distribution, e.g. ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["SmoothKernelDistribution",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/SmoothKernelDistribution"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "ca07a92b-f120-4e46-bea8-a8d43761a71b"],
+ ". Obtain goodness of fit.\ne) Simulate the changes for the next 30 days, \
+using either of the distributions."
+}], "Text",
+ CellChangeTimes->{{3.7170963507057915`*^9, 3.7170963536743765`*^9}, {
+  3.7171774365490475`*^9, 3.717177442553872*^9}, {3.7280690408223786`*^9, 
+  3.7280690552895374`*^9}},ExpressionUUID->"d19b1c42-889e-4bbf-9bbc-\
+352a9cf47412"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8640199d-a54b-4cb5-bae4-32384d8ba567"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 379, 6, 69, "Chapter",ExpressionUUID->"a2dca719-f5ef-48ab-8944-fd52fb157926"],
+Cell[CellGroupData[{
+Cell[984, 32, 222, 4, 54, "Subsection",ExpressionUUID->"0d900d9e-f540-46c5-8b73-f5c1041ee279"],
+Cell[1209, 38, 1002, 25, 197, "Text",ExpressionUUID->"f66974bd-248f-4238-b357-5ea5c85b0f4c"],
+Cell[2214, 65, 842, 22, 39, "Text",ExpressionUUID->"b6f64789-935a-4e59-ba91-88b70a3b4180"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3093, 92, 361, 5, 54, "Subsection",ExpressionUUID->"40419d95-624f-48ef-91ad-ae1532a1b251"],
+Cell[3457, 99, 282, 10, 150, "Text",ExpressionUUID->"b0d721e6-5e65-437a-9827-8170c369da93"],
+Cell[3742, 111, 601, 14, 39, "Text",ExpressionUUID->"83ffa38b-20db-425b-8861-c4492d392cc8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4380, 130, 381, 6, 54, "Subsection",ExpressionUUID->"33a09cfd-d4a1-4af5-b831-201f544c1658"],
+Cell[4764, 138, 1079, 31, 104, "Text",ExpressionUUID->"b904cdb1-9906-4200-b9c1-f7cc95562f64"],
+Cell[5846, 171, 258, 9, 104, "Text",ExpressionUUID->"b9e18837-3b6d-499c-aa89-5ad1017bc958"],
+Cell[6107, 182, 585, 13, 39, "Text",ExpressionUUID->"5bfdecea-dcd3-4c0c-8d49-c00c8dcac487"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6729, 200, 90, 0, 67, "Section",ExpressionUUID->"c0b1a835-9404-46bc-acb0-64e062edb999"],
+Cell[6822, 202, 1669, 24, 196, "Text",ExpressionUUID->"142f2509-e2eb-4e2c-831d-5d3321b6e41d"],
+Cell[8494, 228, 241, 10, 150, "Text",ExpressionUUID->"7da1413c-e4a5-4651-968b-25dd48ba0bb0"],
+Cell[8738, 240, 279, 5, 35, "Text",ExpressionUUID->"04603d6a-e3be-47d5-a072-9f1d621e7f8d"],
+Cell[9020, 247, 1348, 40, 150, "Text",ExpressionUUID->"d8926ea1-6e84-4283-b558-ba14efc7352c"],
+Cell[10371, 289, 1614, 33, 150, "Text",ExpressionUUID->"98fe056e-72cc-49f8-8730-6be937811f6a"],
+Cell[11988, 324, 1233, 32, 196, "Text",ExpressionUUID->"d19b1c42-889e-4bbf-9bbc-352a9cf47412"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

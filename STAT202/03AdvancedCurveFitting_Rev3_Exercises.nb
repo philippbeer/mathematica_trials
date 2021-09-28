@@ -1,0 +1,217 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8219,        209]
+NotebookOptionsPosition[      7147,        184]
+NotebookOutlinePosition[      7550,        200]
+CellTagsIndexPosition[      7507,        197]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ST202 In-Chapter Exercises Part 3", "Chapter",
+ CellChangeTimes->{{3.7274659965925317`*^9, 3.727466003920027*^9}, {
+  3.727466056648489*^9, 3.7274660585926266`*^9}, {3.7274663652911887`*^9, 
+  3.727466365715305*^9}, {3.727707203871344*^9, 3.727707215037463*^9}, {
+  3.8123657296185856`*^9, 3.812365741435884*^9}, {3.8123659952089343`*^9, 
+  3.812365995287817*^9}, {3.812456133633613*^9, 
+  3.8124561337937326`*^9}},ExpressionUUID->"a2dca719-f5ef-48ab-8944-\
+fd52fb157926"],
+
+Cell[CellGroupData[{
+
+Cell["Review Exercises", "Section",ExpressionUUID->"244af6fb-be5a-4516-8770-d93e44d74206"],
+
+Cell["\<\
+1. In this exercise, you will perform spline smoothing for higher degrees.\
+\>", "Text",
+ CellChangeTimes->{{3.7137816746619954`*^9, 3.7137818844457717`*^9}, {
+  3.71378193556964*^9, 3.7137819658937597`*^9}, {3.714932706513685*^9, 
+  3.714932777551773*^9}, {3.7149944624243193`*^9, 3.714994481221649*^9}, {
+  3.7149952823349857`*^9, 3.7149952899731197`*^9}, {3.714995965688754*^9, 
+  3.7149959683681498`*^9}, {3.7170970846822963`*^9, 3.717097086369893*^9}, {
+  3.727463558179019*^9, 
+  3.727463558499894*^9}},ExpressionUUID->"48415803-98e6-4766-979d-\
+7d70cf725653"],
+
+Cell[TextData[{
+ "a) First, bring a real-world dataset for this example, for instance, the \
+stock prices of Amazon from 2013 to 2017 using ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["FinancialData",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/FinancialData"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "1a751448-9974-4e3b-a45f-49580b0df3f7"],
+ ".\nb) The second step is to construct the knots; place the knots at 30-day \
+intervals/month intervals. This seems to be a reasonable choice; you can use \
+any optimum choice of knots.\nc) Next, create a three-degree spline fit. Use \
+the example given in the chapter notes to get the preliminary structure for \
+constructing the ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["BSplineBasis",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/BSplineBasis"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "8a5d2768-71cc-4c93-987b-e8bb110c0273"],
+ ".\nd) Finally, use ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["LinearModelFit",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/LinearModelFit"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "5429736b-ee14-4b57-9804-c91828dc3886"],
+ " to fit the data to the basis function.\ne) Visualize the data and the fit \
+in a single plot. "
+}], "Text",
+ CellChangeTimes->{{3.717097091455189*^9, 3.7170971399400206`*^9}, {
+  3.7259867978123765`*^9, 3.7259868159152813`*^9}, {3.7274673292870936`*^9, 
+  3.7274673365443068`*^9}, {3.727720220667042*^9, 3.727720220888981*^9}, {
+  3.7280695589720135`*^9, 
+  3.7280695746513987`*^9}},ExpressionUUID->"dbe17ce0-7b7b-493a-8b30-\
+72f557f26244"],
+
+Cell["\<\
+2. In this exercise, you will perform a nonlinear regression for data \
+obtained from the NIST website, located in Gaussian1.txt.\
+\>", "Text",
+ CellChangeTimes->{{3.7259863377281866`*^9, 3.725986722324672*^9}, {
+  3.7259867631296206`*^9, 3.7259867873707523`*^9}, {3.727463561093748*^9, 
+  3.727463561573024*^9}, {3.727718296753942*^9, 3.72771831753808*^9}, {
+  3.812456488272644*^9, 
+  3.812456490915899*^9}},ExpressionUUID->"7c063632-274f-43ce-8281-\
+7c2716f77825"],
+
+Cell[TextData[{
+ "a) First, bring in the data and clean it so that it can be used by ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["NonlinearModelFit",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/NonlinearModelFit"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "01f0a89f-be81-4860-bdbc-4612b35b9a04"],
+ ".\nb) In the next step, try fitting the data with the theoretical formula \
+that corresponds to the experimental data that was provided. The form is that \
+of an decreasing exponential, combined with a sum of two Gaussians (make sure \
+you have all the constants, normalization, mean and the variance)."
+}], "Text",
+ CellChangeTimes->{{3.7259863377281866`*^9, 3.725986722324672*^9}, {
+  3.7259867631296206`*^9, 3.7259867873707523`*^9}, {3.727463561093748*^9, 
+  3.727463561573024*^9}, {3.727718298772408*^9, 3.727718364233986*^9}, {
+  3.7280695792314634`*^9, 
+  3.7280695792314634`*^9}},ExpressionUUID->"97001335-60d6-4eb1-a369-\
+b588998fa1e5"],
+
+Cell[TextData[{
+ "Notice how ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["NonlinearModelFit",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/NonlinearModelFit"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "09ffd6ec-8e86-43c2-a2ba-50d39b8cb08c"],
+ " did not perform well. Try to correct this in the following steps."
+}], "Text",
+ CellChangeTimes->{{3.7259863377281866`*^9, 3.725986722324672*^9}, {
+   3.7259867631296206`*^9, 3.7259867873707523`*^9}, {3.727463561093748*^9, 
+   3.727463561573024*^9}, {3.727718298772408*^9, 3.7277183865762463`*^9}, 
+   3.727720263640217*^9, {3.728069591324409*^9, 
+   3.7280695913253856`*^9}},ExpressionUUID->"9910ae54-b8ff-4c7a-9567-\
+fe04e3325913"],
+
+Cell[TextData[{
+ "c) Use ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["FindFit",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/FindFit"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "3c5d3d57-59a5-4aee-b7d3-f564354715b8"],
+ " to obtain the correct parameters for the fit. Use the method ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["NMinimize",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/NMinimize"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "a3072da4-f3fb-464e-ba5c-2d9dfea42253"],
+ " and make sure convergence is reached (by fine-tuning the parameters).\nd) \
+Finally, plot the model obtained from ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["FindFit",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/FindFit"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "0e25875e-f49a-4da9-9729-111306e92695"],
+ " with the data to visualize how good the fit is.\ne) You can also take the \
+parameters, round them off, provide them to ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["NonlinearModelFit",
+    BaseStyle->"Link",
+    ButtonData->"paclet:ref/NonlinearModelFit"],
+   FontWeight->"Bold"]],ExpressionUUID->
+  "e78d554a-4069-4f86-801c-f6d79026f125"],
+ " (with constraints) and visualize the fit."
+}], "Text",
+ CellChangeTimes->{{3.7259863377281866`*^9, 3.725986722324672*^9}, {
+   3.7259867631296206`*^9, 3.7259867873707523`*^9}, {3.727463561093748*^9, 
+   3.727463561573024*^9}, {3.727718298772408*^9, 3.727718372337002*^9}, {
+   3.727718416929516*^9, 3.7277184676858473`*^9}, {3.7277202786475887`*^9, 
+   3.727720296351198*^9}, {3.7280718895133705`*^9, 3.7280718911948385`*^9}, 
+   3.7280719822150517`*^9},ExpressionUUID->"485b5e4a-0c4f-4eba-b5a0-\
+3688691faaac"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{-4.8, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6ab4b260-72f7-4881-9ec4-05b0f5c25801"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 478, 7, 69, "Chapter",ExpressionUUID->"a2dca719-f5ef-48ab-8944-fd52fb157926"],
+Cell[CellGroupData[{
+Cell[1083, 33, 90, 0, 67, "Section",ExpressionUUID->"244af6fb-be5a-4516-8770-d93e44d74206"],
+Cell[1176, 35, 576, 10, 35, "Text",ExpressionUUID->"48415803-98e6-4766-979d-7d70cf725653"],
+Cell[1755, 47, 1572, 38, 242, "Text",ExpressionUUID->"dbe17ce0-7b7b-493a-8b30-72f557f26244"],
+Cell[3330, 87, 477, 9, 58, "Text",ExpressionUUID->"7c063632-274f-43ce-8281-7c2716f77825"],
+Cell[3810, 98, 951, 19, 173, "Text",ExpressionUUID->"97001335-60d6-4eb1-a369-b588998fa1e5"],
+Cell[4764, 119, 685, 16, 58, "Text",ExpressionUUID->"9910ae54-b8ff-4c7a-9567-fe04e3325913"],
+Cell[5452, 137, 1667, 43, 173, "Text",ExpressionUUID->"485b5e4a-0c4f-4eba-b5a0-3688691faaac"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
