@@ -1,0 +1,113 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3350,        103]
+NotebookOptionsPosition[      2700,         85]
+NotebookOutlinePosition[      3124,        102]
+CellTagsIndexPosition[      3081,         99]
+WindowTitle->Solution
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "Check each column with ",
+ StyleBox[ButtonBox["MatchQ",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/MatchQ"],
+  FontWeight->"Bold"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.7480086030605993`*^9, 3.748008616314908*^9}, 
+   3.748347163872402*^9, {3.832158225569758*^9, 
+   3.832158251665526*^9}},ExpressionUUID->"4e459700-de64-4e7e-9349-\
+abdbbc4822b2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"MatchQ", "[", 
+    RowBox[{
+     RowBox[{"DeleteDuplicates", "[", 
+      RowBox[{"demographicsData", "[", 
+       RowBox[{"[", 
+        RowBox[{"All", ",", "#"}], "]"}], "]"}], "]"}], ",", 
+     RowBox[{"{", "_", "}"}]}], "]"}], "&"}], " ", "/@", 
+  RowBox[{"Range", "[", 
+   RowBox[{"2", ",", "18"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7480084247884502`*^9, 3.7480084698173523`*^9}, {
+  3.7480085347862167`*^9, 3.748008544903433*^9}},
+ CellLabel->
+  "In[119]:=",ExpressionUUID->"53e2a797-0603-491b-b6bb-92a467c2f4ba"],
+
+Cell["\<\
+Pick out the column index and name of the columns along with the unique value \
+for the particular column that matches the criteria:\
+\>", "Text",
+ CellChangeTimes->{{3.748008620962215*^9, 3.748008694102584*^9}, {
+  3.748008732301735*^9, 3.74800873497224*^9}, {3.748347167749735*^9, 
+  3.748347170437443*^9}, {3.832158255617063*^9, 
+  3.832158256096875*^9}},ExpressionUUID->"5a72dbcd-677d-4400-954f-\
+838cbbe3fc06"],
+
+Cell[BoxData[
+ RowBox[{"Cases", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#", ",", 
+       RowBox[{"headers", "[", 
+        RowBox[{"[", "#", "]"}], "]"}], ",", 
+       RowBox[{"DeleteDuplicates", "[", 
+        RowBox[{"demographicsData", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "#"}], "]"}], "]"}], "]"}]}], "}"}], "&"}], " ",
+     "/@", 
+    RowBox[{"Range", "[", 
+     RowBox[{"2", ",", "18"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"___", ",", 
+     RowBox[{"{", "_", "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.716655410800294*^9, 3.716655431710865*^9}, 
+   3.716655529260407*^9, 
+   3.716726702123535*^9},ExpressionUUID->"efc684b4-3f62-4aea-9a0d-\
+5f25f46aa585"]
+},
+WindowSize->{800, 600},
+WindowMargins->{{532, Automatic}, {217, Automatic}},
+WindowTitle->"Solution",
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"53edc2b9-9a56-4ed1-be77-9dbcdd8b0b9a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 371, 11, 35, "Text",ExpressionUUID->"4e459700-de64-4e7e-9349-abdbbc4822b2"],
+Cell[954, 34, 571, 15, 30, "Input",ExpressionUUID->"53e2a797-0603-491b-b6bb-92a467c2f4ba"],
+Cell[1528, 51, 425, 8, 58, "Text",ExpressionUUID->"5a72dbcd-677d-4400-954f-838cbbe3fc06"],
+Cell[1956, 61, 740, 22, 52, "Input",ExpressionUUID->"efc684b4-3f62-4aea-9a0d-5f25f46aa585"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

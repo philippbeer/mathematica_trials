@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4174,        111]
+NotebookOptionsPosition[      3340,         91]
+NotebookOutlinePosition[      3764,        108]
+CellTagsIndexPosition[      3721,        105]
+WindowTitle->Solution
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Replace with Missing:", "Text",
+ CellChangeTimes->{{3.748004561944907*^9, 3.7480045666081533`*^9}, {
+   3.748273463042527*^9, 3.748273463434394*^9}, 
+   3.832158682330188*^9},ExpressionUUID->"40ca8bdf-9fc0-4302-87ea-\
+e85b3a1788c2"],
+
+Cell[BoxData[
+ RowBox[{"Position", "[", 
+  RowBox[{"breamData", ",", 
+   RowBox[{"{", 
+    RowBox[{"___", ",", "_Missing", ",", "___"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.714155280059628*^9, 3.71415531615667*^9}, 
+   3.716730376595751*^9, {3.716734212335167*^9, 3.716734285463916*^9}, {
+   3.716734359651153*^9, 3.716734415919957*^9}, {3.725989861752277*^9, 
+   3.725989874405895*^9}, 3.725990014330104*^9, {3.725990150130805*^9, 
+   3.725990161501646*^9}},
+ CellLabel->
+  "In[432]:=",ExpressionUUID->"dccafd47-119a-4efe-a07c-f928716df675"],
+
+Cell[BoxData[
+ RowBox[{"breamData", "[", 
+  RowBox[{"[", "14", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.714155280059628*^9, 3.71415531615667*^9}, 
+   3.716730376595751*^9, {3.716734212335167*^9, 3.716734285463916*^9}, {
+   3.716734359651153*^9, 3.716734415919957*^9}, {3.725989861752277*^9, 
+   3.7259899219453506`*^9}, {3.725990020021811*^9, 3.725990020461891*^9}, {
+   3.725990167702175*^9, 3.7259901695408792`*^9}},
+ CellLabel->
+  "In[433]:=",ExpressionUUID->"34770e1d-5c52-4ea3-99c7-a4e465e371fd"],
+
+Cell[BoxData[
+ RowBox[{"subs", " ", "=", 
+  RowBox[{"Mean", "[", 
+   RowBox[{"DeleteMissing", "[", 
+    RowBox[{"breamData", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.748546464165161*^9, 3.7485464657752132`*^9}},
+ CellLabel->
+  "In[434]:=",ExpressionUUID->"3c34f709-451b-4ec8-9fa5-59f16e49d138"],
+
+Cell[BoxData[
+ RowBox[{"ReplacePart", "[", 
+  RowBox[{"breamData", ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"14", ",", "2"}], "}"}], "\[Rule]", " ", "subs"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7485464312364683`*^9, 3.748546469702729*^9}},
+ CellLabel->
+  "In[435]:=",ExpressionUUID->"10c860f2-cc99-472e-b30f-13074bb143e7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"breamData", "[", 
+   RowBox[{"[", 
+    RowBox[{"14", ",", "2"}], "]"}], "]"}], " ", "=", 
+  RowBox[{"Mean", "[", 
+   RowBox[{"DeleteMissing", "[", 
+    RowBox[{"breamData", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.7141559041080503`*^9, 3.714155923997322*^9}, {
+  3.714155955727833*^9, 3.714155956991976*^9}, {3.714156661557919*^9, 
+  3.714156685692473*^9}, {3.71415672022866*^9, 3.714156782001061*^9}, {
+  3.714157057273102*^9, 3.71415706218176*^9}, {3.7167304002555437`*^9, 
+  3.716730403729417*^9}, {3.725990182507531*^9, 
+  3.725990260509904*^9}},ExpressionUUID->"a490cbcb-f82d-44bc-82b7-\
+9c77d4265748"]
+},
+WindowSize->{800, 600},
+WindowMargins->{{532, Automatic}, {217, Automatic}},
+WindowTitle->"Solution",
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e19e7093-526a-42f6-8bbb-684e76d9114a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 238, 4, 35, "Text",ExpressionUUID->"40ca8bdf-9fc0-4302-87ea-e85b3a1788c2"],
+Cell[821, 27, 554, 11, 30, "Input",ExpressionUUID->"dccafd47-119a-4efe-a07c-f928716df675"],
+Cell[1378, 40, 506, 9, 30, "Input",ExpressionUUID->"34770e1d-5c52-4ea3-99c7-a4e465e371fd"],
+Cell[1887, 51, 378, 9, 30, "Input",ExpressionUUID->"3c34f709-451b-4ec8-9fa5-59f16e49d138"],
+Cell[2268, 62, 339, 9, 30, "Input",ExpressionUUID->"10c860f2-cc99-472e-b30f-13074bb143e7"],
+Cell[2610, 73, 726, 16, 30, "Input",ExpressionUUID->"a490cbcb-f82d-44bc-82b7-9c77d4265748"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

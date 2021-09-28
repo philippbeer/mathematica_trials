@@ -1,0 +1,53 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1278,         43]
+NotebookOptionsPosition[       905,         28]
+NotebookOutlinePosition[      1329,         45]
+CellTagsIndexPosition[      1286,         42]
+WindowTitle->Solution
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Error 2:  Columns {7, 8, 15, 16} only have zeros.", "Text",
+ CellChangeTimes->{{3.7166565494833117`*^9, 3.716656599638537*^9}, {
+   3.7166566308388767`*^9, 3.716656652645533*^9}, 3.832158764916369*^9},
+ FontColor->GrayLevel[0],
+ Background->GrayLevel[
+  0.85],ExpressionUUID->"3b4f6d7b-7580-4c5c-bb42-f8cd7a907fd4"]
+},
+WindowSize->{800, 600},
+WindowMargins->{{532, Automatic}, {217, Automatic}},
+WindowTitle->"Solution",
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"206cbb43-524f-4540-a617-30d12f02a70b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 321, 5, 51, "Text",ExpressionUUID->"3b4f6d7b-7580-4c5c-bb42-f8cd7a907fd4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

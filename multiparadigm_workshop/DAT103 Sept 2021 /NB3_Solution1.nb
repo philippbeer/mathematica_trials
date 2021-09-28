@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3429,         93]
+NotebookOptionsPosition[      2780,         75]
+NotebookOutlinePosition[      3204,         92]
+CellTagsIndexPosition[      3161,         89]
+WindowTitle->Solution
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Pattern matching:", "Text",
+ CellChangeTimes->{{3.7480034905370083`*^9, 3.7480034917686443`*^9}, {
+   3.7480035379637814`*^9, 3.748003544867757*^9}, 3.7480045172900953`*^9, {
+   3.748346945156794*^9, 3.748346946010435*^9}, 
+   3.832158667858567*^9},ExpressionUUID->"9744a285-6bd9-4d95-8307-\
+ac525398165d"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"breamData", "=", " ", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<breamData.csv\>\"", "]"}], "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<NA\>\"", "|", "\"\<na\>\"", "|", "\"\<N/A\>\""}], 
+      "\[Rule]", 
+      RowBox[{"Missing", "[", "]"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Cases", "[", 
+  RowBox[{"breamData", ",", 
+   RowBox[{"{", 
+    RowBox[{"___", ",", "_Missing", ",", "___"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7141547437860737`*^9, 3.714154747793254*^9}, {
+   3.714154788950263*^9, 3.7141548088264313`*^9}, 3.716730366450082*^9, {
+   3.716730437391067*^9, 3.716730497830957*^9}, {3.717185124708528*^9, 
+   3.717185125770598*^9}, {3.7259900937894163`*^9, 
+   3.725990112381259*^9}},ExpressionUUID->"e3bddff6-ee94-44e0-b4c6-\
+5414d1891814"],
+
+Cell["SemanticImport:", "Text",
+ CellChangeTimes->{{3.7480034905370083`*^9, 3.7480034917686443`*^9}, {
+   3.7480035379637814`*^9, 3.7480035587957563`*^9}, 3.748004519961152*^9, 
+   3.832158670009472*^9},ExpressionUUID->"4260d3d3-6e9c-4095-8cfe-\
+2f02c58e719d"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"breamDataset", "=", " ", 
+   RowBox[{"SemanticImport", "[", 
+    RowBox[{"\"\<breamData.csv\>\"", ",", 
+     RowBox[{"\"\<MissingDataRules\>\"", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<NA\>\"", "\[Rule]", 
+        RowBox[{"Missing", "[", "]"}]}], "}"}]}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Cases", "[", 
+  RowBox[{"breamDataset", ",", 
+   RowBox[{"{", 
+    RowBox[{"___", ",", "_Missing", ",", "___"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7141547437860737`*^9, 3.714154747793254*^9}, {
+   3.714154788950263*^9, 3.7141548088264313`*^9}, 3.716730366450082*^9, 
+   3.716730499964924*^9, 3.717185152496114*^9, {3.725990134106328*^9, 
+   3.7259901400034227`*^9}},ExpressionUUID->"97402f02-1ea2-4985-b293-\
+dfdcd93bc961"]
+},
+WindowSize->{800, 600},
+WindowMargins->{{532, Automatic}, {217, Automatic}},
+WindowTitle->"Solution",
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"20b504e4-5e8f-428e-a2f4-1212262e1b21"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 312, 5, 35, "Text",ExpressionUUID->"9744a285-6bd9-4d95-8307-ac525398165d"],
+Cell[895, 28, 838, 20, 52, "Input",ExpressionUUID->"e3bddff6-ee94-44e0-b4c6-5414d1891814"],
+Cell[1736, 50, 260, 4, 35, "Text",ExpressionUUID->"4260d3d3-6e9c-4095-8cfe-2f02c58e719d"],
+Cell[1999, 56, 777, 17, 52, "Input",ExpressionUUID->"97402f02-1ea2-4985-b293-dfdcd93bc961"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

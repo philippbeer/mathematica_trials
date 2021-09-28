@@ -1,0 +1,80 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2199,         72]
+NotebookOptionsPosition[      1603,         52]
+NotebookOutlinePosition[      1997,         68]
+CellTagsIndexPosition[      1954,         65]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["The Multiparadigm Data Science Workflow, part 1", "Title",
+ CellChangeTimes->{{3.840017571977591*^9, 3.8400175848016376`*^9}},
+ FontWeight->"Plain",ExpressionUUID->"e84c3fec-b38f-4c59-9c65-a037cfa14e5d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Interpreter", "[", "\"\<City\>\"", "]"}], "[", "\"\<Munich\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.84001976881439*^9, 3.840019803175754*^9}},
+ CellLabel->
+  "In[339]:=",ExpressionUUID->"90af3495-9df7-4d6b-a6a6-dd9bc512faa2"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Munich\"", 
+   RowBox[{"Entity", "[", 
+     RowBox[{"\"City\"", ",", 
+       RowBox[{"{", 
+         RowBox[{"\"Munich\"", ",", "\"Bavaria\"", ",", "\"Germany\""}], 
+         "}"}]}], "]"}], 
+   "\"Entity[\\\"City\\\", {\\\"Munich\\\", \\\"Bavaria\\\", \
+\\\"Germany\\\"}]\"", "\"city\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{{3.840019784739016*^9, 3.84001980465633*^9}},
+ CellLabel->
+  "Out[339]=",ExpressionUUID->"5551bdd9-acf6-49cb-a29a-3efdacadf1d0"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 925}, {Automatic, 285}},
+FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3c162711-cff1-43ef-a1c3-b4bcbe3d7863"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 209, 2, 200, "Title",ExpressionUUID->"e84c3fec-b38f-4c59-9c65-a037cfa14e5d"],
+Cell[CellGroupData[{
+Cell[814, 28, 267, 6, 37, "Input",ExpressionUUID->"90af3495-9df7-4d6b-a6a6-dd9bc512faa2"],
+Cell[1084, 36, 491, 12, 52, "Output",ExpressionUUID->"5551bdd9-acf6-49cb-a29a-3efdacadf1d0"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
